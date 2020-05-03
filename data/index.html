@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>Config your ESP8266</title>
+<link rel="stylesheet" href="stylesheet.css">
+<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+
+<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+
+</head>
+<body>
+	<div id="wrapper">
+		<div id="container">
+			<h1>Please Enter:</h1>
+			<form action=/config method=POST>
+				<ul>
+					<li>
+	    				<label>Your WiFi SSID</label>
+						<input type=text name=SSID placeholder=SSID value=>
+					</li>
+					<li>				
+	    				<label>Your WiFi Password</label>
+						<input type=password name=password placeholder=Password value=>
+					</li>
+					<li>
+						<label>Room of the Device</label>
+						<input type=text name=room placeholder=Room value=>
+					</li>
+					<li>			
+						<label>Name of the Device</label>
+						<input type=text name=device-name placeholder=Lamp value=>
+					</li>
+					<li>			
+						<label>IP-Adress of the MQTT-Server</label>
+						<input type=text name=serverIP placeholder=192.168.0.1 value=>
+					</li>
+						<input type=submit value="Configurate Device">
+				</ul>			
+			</form>
+			<form action=/reset method=POST>
+				<input type=submit value="Reset Device">
+			</form>
+			<!--<form action=/config.txt method=POST>
+				<input type=submit value="Show Configuration">
+			</form>-->
+		</div>		
+		<footer>
+			<label>Copyright by Aaron Sowa</label>
+		</footer>		
+	</div>
+</body>
+</html>

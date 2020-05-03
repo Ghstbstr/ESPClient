@@ -1,0 +1,1 @@
+#define SECRET_PASS "12345678"
